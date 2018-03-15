@@ -78,7 +78,9 @@ class App extends React.Component {
                 <Order fishes ={this.state.fishes} order={this.state.order} />
 
                 { /* pass the function to inventory component*/}
-                <Inventory addFish={this.addFish} loadSampleFishes={this.loadSampleFishes} />
+                <Inventory addFish={this.addFish}
+                    loadSampleFishes={this.loadSampleFishes}
+                    fishes={this.state.fishes} />
             </div>
         )
     }
