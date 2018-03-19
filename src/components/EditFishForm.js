@@ -5,6 +5,13 @@ class EditFishForm extends React.Component
 {
     handleChange = event => {
         console.log(event.currentTarget.value);
+        // update that fishes
+        // 1. Get the current state of fish
+        const updatedFish = {
+            ...this.state.fish,
+            [event.currentTarget.name]: event.currentTarget.value
+            };
+
     }
     render() {
         return <div className="fish-edit">
